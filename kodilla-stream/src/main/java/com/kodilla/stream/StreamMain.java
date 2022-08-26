@@ -1,6 +1,7 @@
 package com.kodilla.stream;
 
 import com.kodilla.stream.beautifier.PoemBeautifier;
+import com.kodilla.stream.iterate.NumberGenerator;
 import com.kodilla.stream.lambda.ExpressionExecutor;
 import com.kodilla.stream.lambda.Processor;
 import com.kodilla.stream.reference.FunctionCalculator;
@@ -30,5 +31,8 @@ public class StreamMain {
         expressionExecutor.executeExpression(8, 2, FunctionCalculator::addAToB);
         expressionExecutor.executeExpression(8, 2, FunctionCalculator::subtractAFromB);
         expressionExecutor.executeExpression(8,2,FunctionCalculator::divideAByB);
+
+        System.out.println("\nUsing Stream to generate even numbers from 1 to 20");
+        NumberGenerator.generateEven(20);
     }
 }
