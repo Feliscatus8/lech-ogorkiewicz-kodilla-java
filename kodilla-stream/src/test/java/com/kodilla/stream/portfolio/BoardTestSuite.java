@@ -9,6 +9,7 @@ import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static java.time.temporal.ChronoUnit.DAYS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BoardTestSuite {
@@ -87,7 +88,7 @@ public class BoardTestSuite {
         OptionalDouble averageTask = project.getTaskLists().stream()
                 .filter(inProgressTasks::contains)
                 .flatMap(tl -> tl.getTasks().stream())
-                .mapToInt(task -> LocalDate.now().compareTo(task.getCreated()))
+                .mapToInt(task -> (int)DAYS.between(task.getCreated(), LocalDate.now()))
                 .average();
 
         //Then
