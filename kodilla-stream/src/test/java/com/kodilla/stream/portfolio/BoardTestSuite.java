@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.OptionalDouble;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 import static org.junit.jupiter.api.Assertions.assertEquals;

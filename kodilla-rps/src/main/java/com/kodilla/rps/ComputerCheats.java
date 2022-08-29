@@ -19,13 +19,17 @@ public class ComputerCheats implements Rules {
         computerChoicesAgainstRock.add("Paper");
         computerChoicesAgainstRock.add("Scissors");
         choices.put("Rock", computerChoicesAgainstRock);
-        List<String> computerChoicesAgainstPaper = new ArrayList<>(computerChoicesAgainstRock);
-        computerChoicesAgainstPaper.remove("Paper");
+        List<String> computerChoicesAgainstPaper = new ArrayList<>();
+        computerChoicesAgainstPaper.add("Rock");
+        computerChoicesAgainstPaper.add("Paper");
+        computerChoicesAgainstPaper.add("Scissors");
         computerChoicesAgainstPaper.add("Scissors");
         choices.put("Paper", computerChoicesAgainstPaper);
-        List<String> computerChoicesAgainstScissors = new ArrayList<>(computerChoicesAgainstRock);
-        computerChoicesAgainstScissors.remove("Paper");
+        List<String> computerChoicesAgainstScissors = new ArrayList<>();
         computerChoicesAgainstScissors.add("Rock");
+        computerChoicesAgainstScissors.add("Rock");
+        computerChoicesAgainstScissors.add("Paper");
+        computerChoicesAgainstScissors.add("Scissors");
         choices.put("Scissors", computerChoicesAgainstScissors);
 
         List<String> rockWinsAgainst = new ArrayList<>();
@@ -37,6 +41,7 @@ public class ComputerCheats implements Rules {
         List<String> scissorsWinAgainst = new ArrayList<>();
         scissorsWinAgainst.add("Paper");
         ruleBook.put("Scissors", scissorsWinAgainst);
+
         moves.put("1", "Rock");
         moves.put("2", "Paper");
         moves.put("3", "Scissors");
@@ -49,5 +54,8 @@ public class ComputerCheats implements Rules {
     }
     public String getDescription() {
         return description;
+    }
+    public String translateMove(String move){
+        return moves.get(move);
     }
 }

@@ -10,7 +10,7 @@ public class ExoticRules implements Rules {
     private Map<String, List<String>> choices = new HashMap<>();
     private Map<String, String> moves = new HashMap<>();
     private String description = "Rock blunts Scissors and crushes Lizard\nPaper covers Rock and proves Spock's mistake" +
-            "\nScissors cut Paper and hurt Lizard\nLizard eats Paper and bites Spock\nSpock crushes Stone and dismantles Scissors\n" +
+            "\nScissors cut Paper and hurt Lizard\nLizard eats Paper and bites Spock\nSpock annihilates Stone and dismantles Scissors\n" +
             "1 - Rock\n2 - Paper\n3 - Scissors\n4 - Lizard\n5 - Spock\nn - New Game\nx - Exit";
 
     public ExoticRules(){
@@ -18,8 +18,8 @@ public class ExoticRules implements Rules {
         computerChoices.add("Rock");
         computerChoices.add("Paper");
         computerChoices.add("Scissors");
-        computerChoices.add("Spock");
         computerChoices.add("Lizard");
+        computerChoices.add("Spock");
         choices.put("Rock", computerChoices);
         choices.put("Paper", computerChoices);
         choices.put("Scissors", computerChoices);
@@ -39,13 +39,13 @@ public class ExoticRules implements Rules {
         scissorsWinAgainst.add("Lizard");
         ruleBook.put("Scissors", scissorsWinAgainst);
         List<String> lizardWinsAgainst = new ArrayList<>();
-        lizardWinsAgainst.add("Spock");
         lizardWinsAgainst.add("Paper");
+        lizardWinsAgainst.add("Spock");
         ruleBook.put("Lizard", lizardWinsAgainst);
         List<String> spockWinsAgainst = new ArrayList<>();
-        spockWinsAgainst.add("Stone");
+        spockWinsAgainst.add("Rock");
         spockWinsAgainst.add("Scissors");
-        ruleBook.put("Rock", spockWinsAgainst);
+        ruleBook.put("Spock", spockWinsAgainst);
 
         moves.put("1", "Rock");
         moves.put("2", "Paper");
@@ -62,5 +62,8 @@ public class ExoticRules implements Rules {
 
     public String getDescription() {
         return description;
+    }
+    public String translateMove(String move){
+        return moves.get(move);
     }
 }
