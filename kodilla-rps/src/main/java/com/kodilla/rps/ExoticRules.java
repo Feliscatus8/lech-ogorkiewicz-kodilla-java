@@ -10,7 +10,7 @@ public class ExoticRules implements Rules {
     private Map<String, List<String>> choices = new HashMap<>();
     private Map<String, String> moves = new HashMap<>();
     private String description = "Rock blunts Scissors and crushes Lizard\nPaper covers Rock and proves Spock's mistake" +
-            "\nScissors cut Paper and hurt Lizard\nLizard eats Paper and bites Spock\nSpock annihilates Stone and dismantles Scissors\n" +
+            "\nScissors cut Paper and hurt Lizard\nLizard eats Paper and bites Spock\nSpock annihilates Rock and dismantles Scissors\n" +
             "1 - Rock\n2 - Paper\n3 - Scissors\n4 - Lizard\n5 - Spock\nn - New Game\nx - Exit";
 
     public ExoticRules(){
