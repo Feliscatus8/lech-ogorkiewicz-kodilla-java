@@ -8,7 +8,7 @@ public class RpsRunner {
         String name = "";
         PlayerInput playerInput = new PlayerInput();
         while (!end) {
-            if (name == ""){
+            if (name.equals("")){
                 System.out.println("\nEnter your name: ");
                 name = playerInput.getPlayerInput();
             }
