@@ -15,32 +15,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class KodillaSpringApplicationTests {
 
     @Test
-    void testCircleLoadedIntoContainer() {
-        //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = context.getBean(Circle.class);
-
-        //When
-        String name = shape.getShapeName();
-
-        //Then
-        assertEquals("This is a circle.", name);
-    }
-
-    @Test
-    void testTriangleLoadedIntoContainer() {
-        //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = context.getBean(Triangle.class);
-
-        //When
-        String name = shape.getShapeName();
-
-        //Then
-        assertEquals("This is a triangle.", name);
-    }
-
-    @Test
     void testSquareLoadedIntoContainer() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
@@ -53,20 +27,7 @@ class KodillaSpringApplicationTests {
         assertEquals("This is a square.", name);
     }
 
-    @Test
-    void testShapeLoadedIntoContainer() {
-        //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape) context.getBean("chosenShape");
-
-        //When
-        String name = shape.getShapeName();
-
-        //Then
-        System.out.println("Chosen shape says: " + name);;
-    }
-
-    @Test
+       @Test
     void contextLoads() {
     }
 
