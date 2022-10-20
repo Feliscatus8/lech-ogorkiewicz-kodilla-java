@@ -26,4 +26,12 @@ public class DrivingTask implements Task {
     public boolean isTaskExecuted() {
         return this.executed;
     }
+
+    public String getWhere() {
+        return where;
+    }
+
+    public String getUsing() {
+        return using;
+    }
 }

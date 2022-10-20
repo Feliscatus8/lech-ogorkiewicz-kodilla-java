@@ -26,4 +26,12 @@ public class PaintingTask implements Task {
     public boolean isTaskExecuted() {
         return this.executed;
     }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public String getWhatToPaint() {
+        return whatToPaint;
+    }
 }

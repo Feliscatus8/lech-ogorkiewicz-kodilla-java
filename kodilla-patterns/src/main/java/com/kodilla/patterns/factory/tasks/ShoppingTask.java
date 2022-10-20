@@ -26,4 +26,12 @@ public class ShoppingTask implements Task {
     public boolean isTaskExecuted() {
         return this.executed;
     }
+
+    public String getWhatToBuy() {
+        return whatToBuy;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
 }
