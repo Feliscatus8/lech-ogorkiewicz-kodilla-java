@@ -42,14 +42,14 @@ INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO)
 VALUES (2, 'make video', 'record a video of your cat', 1);
 
 INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO)
-VALUES (2, 'publish photo', 'publish the photo of your cat in the internet', 5);
+VALUES (3, 'publish photo', 'publish the photo of your cat in the internet', 5);
 INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO)
-VALUES (2, 'publish video', 'publish a video of your cat in the internet', 5);
+VALUES (3, 'publish video', 'publish a video of your cat in the internet', 5);
 INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO)
-VALUES (2, 'make website', 'make a website about your cat', 2);
+VALUES (3, 'make website', 'make a website about your cat', 2);
 INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO)
-VALUES (2, 'donate', 'donate some money to a foundetion helping homeless cats', 3);
+VALUES (3, 'donate', 'donate some money to a foundetion helping homeless cats', 3);
 INSERT INTO ISSUES (ISSUESLIST_ID, SUMMARY, DESCRIPTION, USER_ID_ASSIGNEDTO)
-VALUES (2, 'buy food', 'buy some healthy food for your cat', 4);
+VALUES (3, 'buy food', 'buy some healthy food for your cat', 4);
 
 COMMIT;
