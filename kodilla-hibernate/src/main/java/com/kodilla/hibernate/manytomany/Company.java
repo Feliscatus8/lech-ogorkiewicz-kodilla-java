@@ -6,6 +6,12 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedNativeQuery(
+        name = "Company.retrieveCompaniesByFirstThreeCharacters",
+        query = "SELECT * FROM companies " +
+                "WHERE SUBSTR(COMPANY_NAME, 1, 3) = :BEGINNING",
+        resultClass = Company.class
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
