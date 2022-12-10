@@ -1,0 +1,27 @@
+{
+    "name":"jazz",
+    "brand":"honda",
+    "seats":[
+        1:{
+            "colour":"black",
+            "fabric":"leather",
+        },
+        2:{
+            "colour":"black",
+            "fabric":"leather",
+        },
+        3:{
+            "colour":"green",
+            "fabric":"leather",
+        },
+        4:{
+            "colour":"green",
+            "fabric":"leather",
+        },
+        5:{
+            "colour":"green",
+            "fabric":"leather",
+        },
+    ],
+    "engine capacity":1318
+}
