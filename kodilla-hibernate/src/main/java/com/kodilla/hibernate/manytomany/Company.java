@@ -12,6 +12,10 @@ import java.util.List;
                 "WHERE SUBSTR(COMPANY_NAME, 1, 3) = :BEGINNING",
         resultClass = Company.class
 )
+@NamedQuery(
+        name = "Company.retrieveCompaniesByNameFragment",
+        query = "FROM Company WHERE name LIKE :ARG"
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
